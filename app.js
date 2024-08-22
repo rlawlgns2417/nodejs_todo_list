@@ -27,7 +27,7 @@ router.get("/", (req, res) => {
 app.use("/api", [router, todosRouter]);
 
 // 에러 처리 미들웨어를 등록한다
-app.use(error_handlerMiddleware0);
+app.use(error_handlerMiddleware);
 
 app.listen(PORT, () => {
     console.log(PORT, "포트로 서버가 열렸어요!");
